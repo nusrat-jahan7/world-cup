@@ -135,7 +135,7 @@ img{
     font-size: 1.25rem;
     background-color: var(--regular-color2);
 }
-.btn-3{
+.btn-3, .view-button{
     height: 55px;
     width: 210px;
     border-radius: 10px;
@@ -175,6 +175,7 @@ img{
 .card-detail h3{
     padding: 0 0 10px 20px;
 }
+
 .fa-clock, .span{
     padding: 0 10px 0 20px;
     color:#161616B2;
@@ -182,6 +183,9 @@ img{
 .fa-comment-dots, .span{
     padding: 0 10px 0 20px;
     color:#161616B2;
+}
+.view-button{
+    display: none;
 }
 
 /* Footer Section// */
@@ -213,6 +217,17 @@ hr{
     justify-content: space-evenly;
     align-items: center;
     color: #B9B9B9;
+    margin-bottom: 50px;
+}
+.social-media{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.s-media-icon, .fa-square-facebook, .fa-square-instagram, .fa-linkedin{
+    font-size: 50px;
+    color: #B9B9B9;
+    padding: 0 20px 0 20px;
 }
 
 /* Mobile Devices// */
@@ -284,7 +299,7 @@ hr{
     .footer-container{
         height: 412px;
         width: 375px;
-        margin-top: 10vh;
+        margin-top: 2vh;
     }
     .footer-first-section h2{
         margin-bottom: 20px;
@@ -294,9 +309,18 @@ hr{
     }
     .footer-second-section{
         flex-direction: column;
+        margin-bottom: 0;
     }
     .footer-first-section, .para{
         padding: 5px;
+    }
+    .social-media{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .s-media-icon, .fa-square-facebook, .fa-square-instagram, .fa-linkedin{
+        padding: 0 10px 0 10px;
     }
 }
 
@@ -351,6 +375,20 @@ hr{
         display: grid;
         grid-template-columns: repeat(2,1fr);
     }
+    .extra-card{
+        display: none;
+        border: none;
+    }
+    .view-button{
+        display: inline;
+        margin-top: 20px;
+        height: 55px;
+        width: 210px;
+        border-radius: 10px;
+        font-size: 1.25rem;
+        background-color: var(--button-color);
+        color: var(--regular-color2);
+    }
     footer{
         display: flex;
         flex-direction: column;
@@ -360,7 +398,7 @@ hr{
      .footer-container{
         height: 345px;
         width: 834px;
-        margin-top: 5vh;
+        margin-top: 20px;
     }
     .footer-second-section{
         display: flex;
